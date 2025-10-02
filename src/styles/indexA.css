@@ -1,0 +1,140 @@
+.about-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 4rem 8rem 4rem;
+  max-width: 1000px;
+  background-color: #0f0f11;
+  border: 1px solid #3f3f44;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.about-content .about-title {
+  text-align: center;
+  font-size: clamp(1.9rem, 5vw, 2.2rem);
+  margin: 3rem auto 2rem auto;
+}
+
+.about-content .about-para {
+  text-align: center;
+  margin: 1rem 8rem 1rem 8rem;
+  color: #a1a1aa;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.about-content > hr {
+  margin: 3rem 8rem 3rem 8rem;
+}
+
+.about-mini-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.about-mini-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 650px;
+  background-color: #0b0b0d;
+  border-radius: 20px;
+  border: 1px solid #3f3f44;
+  transition: all 0.5s;
+  margin: auto 1rem auto 1rem;
+}
+
+.about-mini-box .dash-icon {
+  justify-self: center;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  transition: all 0.5s;
+}
+
+.about-mini-box > h3 {
+  margin-bottom: 1rem;
+}
+
+.about-mini-box > p {
+  color: #a1a1aa;
+  line-height: 1.5rem;
+  text-wrap: wrap;
+}
+
+.about-mini-box:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(218, 66, 66, 0.699);
+}
+.about-mini-box:hover .dash-icon {
+  color: rgba(218, 66, 66, 0.699);
+}
+
+.about-contact-boxes {
+  display: flex;
+  flex-direction: column;
+  min-width: 650px;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: #0b0b0d;
+  border-radius: 20px;
+  border: 1px solid #3f3f44;
+  transition: all 0.5s;
+  margin: auto 1rem auto 1rem;
+}
+
+@media (max-width: 810px) {
+  .about-contact-boxes {
+    min-width: 300px;
+  }
+}
+
+.about-contact-boxes > h3 {
+  margin-bottom: 1rem;
+}
+
+.about-contact-boxes > a {
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #a1a1aa;
+}
+
+.about-contact-boxes .mail-icon,
+.linkedin-icon {
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+
+.about-contact-boxes:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(218, 66, 66, 0.699);
+}
+.about-contact-boxes:hover .mail-icon {
+  color: rgba(218, 66, 66, 0.699);
+}
+.about-contact-boxes:hover .linkedin-icon {
+  color: rgba(218, 66, 66, 0.699);
+}
