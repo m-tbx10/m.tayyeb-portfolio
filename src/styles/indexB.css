@@ -19,7 +19,6 @@
 .blog-boxes {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 auto;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -38,6 +37,7 @@
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .blog-box > h3 {
   text-align: left;
   padding: 2rem 0 1rem 2rem;
@@ -93,3 +93,16 @@
   font-size: 0.9rem;
 }
 
+
+@media (max-width: 500px){
+  .blog-boxes{
+    width: 90%;
+  }
+  .blog-box > p {
+    line-height: 1.7rem;   
+  }
+  .blog-tags .blog-tag{
+    font-size: 0.9rem;
+    padding: 0.2rem 0.2rem;
+  }
+}
