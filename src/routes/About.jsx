@@ -1,6 +1,7 @@
 import { LuCircleDotDashed } from "react-icons/lu";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
+import {Link} from "react-router-dom"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -46,6 +47,7 @@ export default function About() {
             <hr />
             <h1 className="about-title fade-in-top">Get in Touch!</h1>
             <div className="about-mini-box-container">
+              <Link to="https://www.linkedin.com/in/mtayyebbilal/" style={{textDecoration: "none", color: "white"}}>
               <div className="about-contact-boxes fade-in-bottom">
                 <h3>LinkedIn</h3>
                 <a href="https://www.linkedin.com/in/mtayyebbilal/">
@@ -53,6 +55,8 @@ export default function About() {
                   mtayyebbilal
                 </a>
               </div>
+              </Link>
+              <Link to="mailto:tayyeb0750@gmail.com" style={{textDecoration: "none", color: "white"}}>
               <div className="about-contact-boxes fade-in-bottom">
                 <h3>Email</h3>
                 <a href="mailto:tayyeb0750@gmail.com">
@@ -61,6 +65,7 @@ export default function About() {
                   tayyeb0750@gmail.com
                 </a>
               </div>
+              </Link>
             </div>
           </div>
         </div>
