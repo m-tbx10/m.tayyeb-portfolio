@@ -7,11 +7,12 @@ export default function Featured({
   delay = 0,
   description,
   id,
+  link
 }) {
   const style = { animationDelay: `${delay}s` };
 
   return (
-    <Link to={`/projects`} style={{ textDecoration: "none", color: "white" }}>
+    <Link to={`${link}`} style={{ textDecoration: "none", color: "white" }}>
       <div className={`fproject-box ${className}`} style={style}>
         <h3>{title}</h3>
         <p>{description}</p>

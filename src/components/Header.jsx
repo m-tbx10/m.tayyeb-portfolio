@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className={scrolled ? "scrolled" : ""}>
-      <h1>tbx10</h1>
+      <Link to="/" style={{textDecoration: "none", color: "white"}}><h1 className="header-title">tbx10</h1></Link>
 
       <button
         className="menu-toggle"
