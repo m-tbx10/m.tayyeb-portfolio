@@ -105,11 +105,7 @@
   margin: auto 1rem auto 1rem;
 }
 
-@media (max-width: 810px) {
-  .about-contact-boxes {
-    min-width: 300px;
-  }
-}
+
 
 .about-contact-boxes > h3 {
   margin-bottom: 1rem;
@@ -137,4 +133,18 @@
 }
 .about-contact-boxes:hover .linkedin-icon {
   color: rgba(218, 66, 66, 0.699);
+}
+
+@media (max-width: 810px) {
+  .about-contact-boxes {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 600px){
+  .about-content .about-para{
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
 }
